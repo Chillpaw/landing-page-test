@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-background: #1f2937;
+    --heading-color: #f9faf8;
+    --heading-color-low-contrast: #e5e7eb;
+    --border-color: #3882f6;
+}
+
 html {
-    background-color: #1f2937;
+    background-color: var(--dark-background);
 }
 
 .header-container {
@@ -26,18 +33,18 @@ html {
 h1.hero {
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
+    color: var(--heading-color);
 }
 
 h2.hero {
     font-size: 18px;
     font-weight: light;
-    color: #e5e7eb;
+    color: var(--heading-color-low-contrast);
 }
 
 h3.hero {
     font-size: 24px;
-    color: #f9faf8;
+    color: var(--heading-color);
 }
 
 .body-container {
@@ -58,12 +65,12 @@ h3.hero {
 }
 
 .content-boxes {
-    border: 2px solid #3882f6;
+    border: 2px solid var(--border-color);
 }
 
 h2.quote {
     font-size: 36px;
-    color: #1f2937;
+    color: var(--dark-background);
     font-style: italic;
     font-weight: lighter;
 }
@@ -73,7 +80,7 @@ h3.quote {
 }
 
 .quote-container {
-    background-color: #e5e7eb;
+    background-color: var(--heading-color-low-contrast);
     justify-content: space-around;
     padding: 90px;
 }
